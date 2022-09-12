@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+    --Very-dark-blue-main: hsl(217, 54%, 11%); /*main*/
+    --Very-dark-blue-card: hsl(216, 50%, 16%);/*card*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%);/*line*/
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+
+ background-color: hsl(217, 54%, 11%);
+ color:var(--White);
+ font-family: 'Outfi', sans-serif;
+ padding: 1rem;
+}
+
+.card__imag {
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.card {
+    width: 270px;
+    height: 455px;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    padding: 1.2rem;
+}
+h3 {
+margin-bottom: 0.8rem;
+
+font-weight: 300;
+}
+
+p{
+  font-size: small;
+  color: var(--Soft-blue);
+  opacity: .6;
+  margin-bottom: 1.2em;
+}
+
+.card-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card-date--image-ethereum {
+ display: flex;
+max-width: 100%;
+color: var(--Cyan);
+font-size: small;
+ 
+}
+
+.card-date__ethereum,
+.card-date__clock{
+  
+  margin-right: .5em;
+}
+
+.card-date--image-clock {
+  display: flex;
+  max-width: 100%;
+  font-size: small;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--Very-dark-blue-line);
+  margin-bottom: .5rem;
+}
+
+.creation {
+display: flex;
+align-items: center;
+  font-size: .7em;
+}
+
+.creation__avatar {
+  width: 30px;
+  margin-right: .7rem;
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+}
+
+.span-creation {
+  margin-right: 1em;
+  color: var(--Soft-blue); 
+}
+
+.span-name {
+ opacity: .9;
+}
+.attribution {
+  margin-top: 1rem;
+}
+
+a{
+  margin-right: 1rem;
+  text-decoration: none;
+}
